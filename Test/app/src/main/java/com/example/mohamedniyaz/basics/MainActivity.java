@@ -1,4 +1,4 @@
-package com.example.mohamedrafiq.myapplication;
+package com.example.mohamedniyaz.basics;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     String name;
-   public EditText editText;
+    public EditText editText;
     public TextView textView;
     Button button;
 
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                 name = editText.getText().toString();
+                name = editText.getText().toString();
                 textView.setText(name);
             }
         });
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onRestoreInstanceState(final Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
 
-       name =  savedInstanceState.getString("Bundle");
+        name =  savedInstanceState.getString("Bundle");
         Log.d("Restore", "onRestoreInstanceState: "+name);
         textView.setText(name);
     }
@@ -83,7 +83,5 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
         Log.d("OnDestroy", "onDestroy: OnDestroy is called when the activity is called when the app killed by user or for memory space");
     }
-
-
 
 }

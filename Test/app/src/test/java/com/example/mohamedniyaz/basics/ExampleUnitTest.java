@@ -1,4 +1,4 @@
-package com.example.mohamedrafiq.myapplication;
+package com.example.mohamedniyaz.basics;
 
 import org.junit.Test;
 
