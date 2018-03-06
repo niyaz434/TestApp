@@ -1,5 +1,6 @@
 package com.example.mohamedniyaz.basics;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,6 +29,20 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 name = editText.getText().toString();
                 textView.setText(name);
+
+
+                //Example of the explixit intent using string
+                Intent intent = new Intent(MainActivity.this,NextActivity.class);
+                intent.putExtra("String",name);
+
+                //Example of explicit intent using Object
+                Person person  = new Person();
+                person.setName(name);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("Object",person);
+                intent.putExtras(bundle);
+                startActivity(intent);
+
             }
         });
 
