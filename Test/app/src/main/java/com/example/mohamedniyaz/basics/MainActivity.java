@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     public EditText editText;
     public TextView textView;
     Button button;
+    Button button1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,11 +24,12 @@ public class MainActivity extends AppCompatActivity {
         editText = findViewById(R.id.edit_text);
         textView = (TextView)findViewById(R.id.text);
         button = (Button)findViewById(R.id.btn);
+        button1 = (Button)findViewById(R.id.btn1);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                name = editText.getText().toString();
+                name = editText.getText().toString().trim();
                 textView.setText(name);
 
 
@@ -85,6 +87,12 @@ public class MainActivity extends AppCompatActivity {
         outState.putString("Bundle",name);
 
 
+    }
+
+    public void Register (View view){
+        Log.d("CLick working", "Register: Working ");
+        Intent intent = new Intent(MainActivity.this,RegisterActivity.class);
+        startActivity(intent);
     }
 
     @Override

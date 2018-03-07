@@ -35,7 +35,7 @@ public class NextActivity extends AppCompatActivity {
             person = (Person)bundle.getSerializable("Object");
         }
         if (person != null) {
-            textView1.setText("Using object :" +person.getName());
+            textView1.setText("object :"+person.getName());
         }
 
     }
