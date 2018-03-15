@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     Button button;
     Button button1;
+    Button button2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,10 +20,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         button = (Button)findViewById(R.id.activity);
         button1 = (Button) findViewById(R.id.layouts);
+        button2 = (Button)findViewById(R.id.fragments);
 
 
         button.setOnClickListener(this);
         button1.setOnClickListener(this);
+        button2.setOnClickListener(this);
     }
 
     @Override
@@ -39,6 +42,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         startActivity(intent1);
                         break;
 
+
+            case  R.id.fragments:
+                        Intent intent2 = new Intent(MainActivity.this,FragmentActivity.class);
+                        startActivity(intent2);
+                        break;
 
         }
     }

@@ -16,12 +16,22 @@
         android:text="Activity Lifecycle" />
 
     <Button
+        android:id="@+id/layouts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/activity"
         android:layout_centerHorizontal="true"
-        android:id="@+id/layouts"
-        android:text="Layouts"/>
+        android:layout_marginTop="11dp"
+        android:text="Layouts" />
+
+    <Button
+        android:id="@+id/fragments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layouts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="fragments" />
 
 
 </RelativeLayout>
