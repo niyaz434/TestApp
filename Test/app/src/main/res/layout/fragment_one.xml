@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#b91a1a"
+        android:text="This is fragment One"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="22dp"
+        android:id="@+id/fragment1_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter something and Press the button"
+        android:layout_marginStart="20dp" />
+
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:background="#ed9191"
+        android:layout_marginTop="22dp"
+        android:id="@+id/fragment1_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pass data"
+        android:layout_marginStart="20dp" />
+</LinearLayout>
+

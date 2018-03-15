@@ -1,9 +1,12 @@
-package com.example.mohamedniyaz.basics;
+package com.example.mohamedniyaz.basics.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.example.mohamedniyaz.basics.model_class.Person;
+import com.example.mohamedniyaz.basics.R;
 
 public class NextActivity extends AppCompatActivity {
 

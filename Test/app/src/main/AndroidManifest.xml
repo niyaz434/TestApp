@@ -9,14 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NextActivity"></activity>
+        <activity android:name=".activity.NextActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.LifeCycleActivity" />
+        <activity android:name=".activity.LayoutActivity" />
+        <activity android:name=".activity.LinearLayoutActivity" />
+        <activity android:name=".activity.RelativeLayoutActivity" />
+        <activity android:name=".activity.ConstraintLayoutActivity" />
+        <activity android:name=".activity.FragmentActivity" />
+        <activity android:name=".activity.Fragment_FragmentActivity" />
+        <activity android:name=".activity.FragmentToActivtiy"></activity>
     </application>
 
 </manifest>
