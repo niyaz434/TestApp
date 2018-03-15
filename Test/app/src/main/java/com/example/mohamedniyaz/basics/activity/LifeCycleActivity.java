@@ -1,15 +1,18 @@
-package com.example.mohamedniyaz.basics;
+package com.example.mohamedniyaz.basics.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.mohamedniyaz.basics.model_class.Person;
+import com.example.mohamedniyaz.basics.R;
+
+public class LifeCycleActivity extends AppCompatActivity {
 
     String name;
     public EditText editText;
@@ -20,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_lifecycle);
         editText = findViewById(R.id.edit_text);
         textView = (TextView)findViewById(R.id.text);
         button = (Button)findViewById(R.id.btn);
@@ -34,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 //Example of the explixit intent using string
-                Intent intent = new Intent(MainActivity.this,NextActivity.class);
+                Intent intent = new Intent(LifeCycleActivity.this,NextActivity.class);
                 intent.putExtra("String",name);
 
                 //Example of explicit intent using Object
@@ -91,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void Register (View view){
         Log.d("CLick working", "Register: Working ");
-        Intent intent = new Intent(MainActivity.this,RegisterActivity.class);
+        Intent intent = new Intent(LifeCycleActivity.this,RegisterActivity.class);
         startActivity(intent);
     }
 
